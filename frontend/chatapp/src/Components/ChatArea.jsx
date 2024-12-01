@@ -55,7 +55,7 @@ function ChatArea() {
         },
       };
 
-      const { data } = await axios.get("http://localhost:5000/message/" + selectedChat?._id, config);
+      const { data } = await axios.get("https://chat-app-mern-github-io.onrender.com/message/" + selectedChat?._id, config);
       setAllMessages(data);
     } catch (error) {
       console.error(error?.message);
