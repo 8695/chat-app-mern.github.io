@@ -35,7 +35,7 @@ const Groups = () => {
         authorization: `Bearer ${user.token}`,
       },
     };
-    axios.get("http://localhost:5000/chat/fetchGroup", config).then((response) => {
+    axios.get("https://chat-app-mern-github-io.onrender.com/chat/fetchGroup", config).then((response) => {
       setGroups(response.data);
       setLoaded(true);
     });
