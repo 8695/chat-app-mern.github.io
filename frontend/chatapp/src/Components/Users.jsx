@@ -35,7 +35,7 @@ const Users = () => {
         authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("http://localhost:5000/user/fetchUsers", config).then((response) => {
+    axios.get("https://chat-app-mern-github-io.onrender.com/user/fetchUsers", config).then((response) => {
       setUsers(response.data);
       setLoaded(true);
     });
