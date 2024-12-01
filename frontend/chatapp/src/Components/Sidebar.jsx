@@ -94,7 +94,7 @@ const Sidebar = () => {
           authorization: `Bearer ${user.token}`,
         },
       };
-      await axios.get("http://localhost:5000/chat/", config).then(({ data }) => {
+      await axios.get("https://chat-app-mern-github-io.onrender.com/chat/", config).then(({ data }) => {
         const filterChat = data.filter((chat) =>
           chat.chatName.toLowerCase().includes(searchTerm.toLowerCase())
         );
