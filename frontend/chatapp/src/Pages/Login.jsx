@@ -72,7 +72,7 @@ const Login = () => {
           "content-type": "application/json",
         },
       };
-      const response = await axios.post("http://localhost:5000/user/register", data, config);
+      const response = await axios.post("https://chat-app-mern-github-io.onrender.com/user/register", data, config);
       setSignInStatus({ msg: "Success", key: Math.random() });
       navigate("/app/chat/welcome");
       localStorage.setItem("UserData", JSON.stringify(response));
