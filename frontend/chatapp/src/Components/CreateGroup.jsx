@@ -98,7 +98,7 @@ const CreateGroup = () => {
     const config = {
       headers: {  authorization: `Bearer ${user.token}` },
     };
-    axios.get("http://localhost:5000/user/fetchUsers", config).then((response) => {
+    axios.get("https://chat-app-mern-github-io.onrender.com/user/fetchUsers", config).then((response) => {
       const searchUsers = response.data.filter((user) =>
         user.username.toLowerCase().includes(searchTerm.toLowerCase())
       );
