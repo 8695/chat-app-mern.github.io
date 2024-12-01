@@ -33,7 +33,7 @@ const MobileChats = () => {
           authorization: `Bearer ${user.token}`,
         },
       };
-      await axios.get("http://localhost:5000/chat/", config).then(({ data }) => {
+      await axios.get("https://chat-app-mern-github-io.onrender.com/chat/", config).then(({ data }) => {
         dispatch(setChats(data));
       });
       setLoaded(true);
