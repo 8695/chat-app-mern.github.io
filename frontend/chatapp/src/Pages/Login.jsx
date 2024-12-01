@@ -28,7 +28,7 @@ const Login = () => {
         },
       };
 
-      const response = await axios.post("http://localhost:5000/user/login", data, config);
+      const response = await axios.post("https://chat-app-mern-github-io.onrender.com/user/login", data, config);
       console.log("response",response)
       setLogInStatus({ msg: "Success", key: Math.random() });
       setLoading(false);
